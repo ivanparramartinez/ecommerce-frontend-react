@@ -5,7 +5,7 @@ const Header: React.FC = () => {
   return (
     <header className="p-4 md:p-6 xl:p-8 bg-[#ECECEC]">
       <nav
-        className="mx-auto flex max-w-sm md:max-w-3xl lg:max-w-5xl xl:max-w-7xl items-center justify-between p-2 md:p-3 xl:p-4 shadow-md rounded-lg md:rounded-xl lg:rounded-2xl bg-white"
+        className="mx-auto flex max-w-sm md:max-w-3xl lg:max-w-5xl xl:max-w-7xl items-center justify-between p-2 md:py-3 md:px-4 xl:py-4 xl:px-6 shadow-md rounded-lg md:rounded-xl lg:rounded-2xl bg-white instrument-sans font-bold text-base"
         aria-label="Global"
       >
         <div className="flex items-center">
@@ -17,7 +17,10 @@ const Header: React.FC = () => {
                 </a>
               </li>
               <li>
-                <a href="/store" className="text-gray-700 hover:text-gray-900">
+                <a
+                  href="/store"
+                  className="text-gray-700 hover:text-gray-900"
+                >
                   Store
                 </a>
               </li>
