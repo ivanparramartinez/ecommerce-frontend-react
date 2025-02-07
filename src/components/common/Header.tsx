@@ -3,24 +3,29 @@ import logo from "../../assets/img/logo.png";
 
 const Header: React.FC = () => {
   const [scrolled, setScrolled] = useState(false);
+  const [hidden, setHidden] = useState(false);
+  const [lastScrollY, setLastScrollY] = useState(0);
 
   useEffect(() => {
     const handleScroll = () => {
-      setScrolled(window.scrollY > 0);
+      const currentScrollY = window.scrollY;
+      setScrolled(currentScrollY > 0);
+      setHidden(currentScrollY > lastScrollY);
+      setLastScrollY(currentScrollY);
     };
 
     window.addEventListener("scroll", handleScroll);
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
-  }, []);
+  }, [lastScrollY]);
 
   return (
     <>
       <header
-        className={`p-4 md:p-6 xl:p-8 sticky top-0 w-full z-50 backdrop-blur-md ${
+        className={`p-4 md:p-6 xl:p-8 sticky top-0 w-full z-50 backdrop-blur-md transition-transform duration-300 ${
           scrolled ? "border-b border-gray-300" : ""
-        }`}
+        } ${hidden ? "-translate-y-full" : "translate-y-0"}`}
       >
         <nav
           className="mx-auto flex max-w-sm md:max-w-3xl lg:max-w-5xl xl:max-w-7xl items-center justify-between p-2 md:py-3 md:px-4 xl:py-4 xl:px-6 shadow-md rounded-lg md:rounded-xl lg:rounded-2xl bg-white/70 instrument-sans font-bold text-base"
@@ -74,7 +79,7 @@ const Header: React.FC = () => {
           </div>
           <div className="flex flex-1 basis-1/3 lg:flex-initial justify-center">
             <a href="#" className="-m-1.5 p-1.5">
-              <span className="sr-only">Luxury Couture</span>
+              <span className="sr-only">Luxe Couture</span>
               <img alt="" src={logo} className="h-8 w-auto" />
             </a>
           </div>
