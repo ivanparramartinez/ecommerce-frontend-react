@@ -17,13 +17,17 @@ const Header: React.FC = () => {
 
   return (
     <>
-      <header className={`p-4 md:p-6 xl:p-8 sticky top-0 w-full z-50 backdrop-blur-md ${scrolled ? 'border-b border-gray-300' : ''}`}>
+      <header
+        className={`p-4 md:p-6 xl:p-8 sticky top-0 w-full z-50 backdrop-blur-md ${
+          scrolled ? "border-b border-gray-300" : ""
+        }`}
+      >
         <nav
           className="mx-auto flex max-w-sm md:max-w-3xl lg:max-w-5xl xl:max-w-7xl items-center justify-between p-2 md:py-3 md:px-4 xl:py-4 xl:px-6 shadow-md rounded-lg md:rounded-xl lg:rounded-2xl bg-white/70 instrument-sans font-bold text-base"
           aria-label="Global"
         >
-          <div className="hidden lg:flex items-center">
-            <nav className="">
+          <div className="items-center flex-1 basis-1/3">
+            <nav className="hidden lg:flex">
               <ul className="flex space-x-6">
                 <li>
                   <a href="/" className="text-gray-700 hover:text-gray-900">
@@ -31,7 +35,10 @@ const Header: React.FC = () => {
                   </a>
                 </li>
                 <li>
-                  <a href="/store" className="text-gray-700 hover:text-gray-900">
+                  <a
+                    href="/store"
+                    className="text-gray-700 hover:text-gray-900"
+                  >
                     Store
                   </a>
                 </li>
@@ -45,14 +52,33 @@ const Header: React.FC = () => {
                 </li>
               </ul>
             </nav>
+            <div className="lg:hidden flex items-center">
+              <button className="text-gray-700 hover:text-gray-900">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M4 6H20M4 12H20M4 18H20"
+                    stroke="black"
+                    strokeWidth={2}
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  />
+                </svg>
+              </button>
+            </div>
           </div>
-          <div className="flex lg:flex-initial">
+          <div className="flex flex-1 basis-1/3 lg:flex-initial justify-center">
             <a href="#" className="-m-1.5 p-1.5">
               <span className="sr-only">Luxury Couture</span>
               <img alt="" src={logo} className="h-8 w-auto" />
             </a>
           </div>
-          <div className="flex items-center">
+          <div className="flex flex-1 basis-1/3 items-center justify-end">
             <nav className="">
               <ul className="flex items-center space-x-6">
                 <li>
@@ -72,7 +98,10 @@ const Header: React.FC = () => {
                   </a>
                 </li>
                 <li>
-                  <a href="/store" className="text-gray-700 hover:text-gray-900">
+                  <a
+                    href="/store"
+                    className="text-gray-700 hover:text-gray-900"
+                  >
                     <svg
                       width="20"
                       height="20"
