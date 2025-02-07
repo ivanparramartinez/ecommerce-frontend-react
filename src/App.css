@@ -1,6 +1,6 @@
 body {
-  background-color: #282c34;
-  color: white;
+  background-color: #ECECEC;
+  color: black;
   font-family: "Roboto", sans-serif;
   font-size: 1.3rem;
 }
@@ -15,4 +15,8 @@ body {
   font-family: "Instrument Sans", serif;
   font-optical-sizing: auto;
   font-style: normal;
+}
+
+.header-spacer {
+  height: 80px; /* Adjust this value based on the header height */
 }
