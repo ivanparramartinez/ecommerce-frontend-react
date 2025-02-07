@@ -10,7 +10,7 @@ interface MainLayoutProps {
     return (
     <div className="min-h-screen flex flex-col">
         <Header />
-          <div className="container mx-auto">
+          <div className="container mx-auto max-w-sm md:max-w-3xl lg:max-w-5xl xl:max-w-7xl">
             <main className="py-6 md:py-10 lg:py-12">
               {children}
             </main>

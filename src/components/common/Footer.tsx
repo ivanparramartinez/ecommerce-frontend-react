@@ -4,7 +4,7 @@ import logo from "../../assets/img/logo.png";
 const Footer: React.FC = () => {
   return (
     <footer className="bg-gray-800 text-white p-4 lg:p-8">
-      <div className="container grid grid-cols-1 lg:grid-cols-2 gap-4">
+      <div className="container mx-auto grid grid-cols-1 lg:grid-cols-2 gap-4">
         <div className="flex items-center justify-start gap-4 lg:gap-8">
           <a href="#" className="">
             <span className="sr-only">Luxe Couture</span>
@@ -16,7 +16,7 @@ const Footer: React.FC = () => {
         </div>
         <div className="flex items-center lg:justify-end gap-4 lg:gap-8">
           <a
-            href="https://www.facebook.com"
+            href="#"
             target="_blank"
             rel="noopener noreferrer"
             className="bg-[#FFD74B] p-2 rounded-full aspect-square max-h-10 lg:max-h-12 lg:h-8/12 flex items-center justify-center"
@@ -35,7 +35,7 @@ const Footer: React.FC = () => {
             </svg>
           </a>
           <a
-            href="https://www.twitter.com"
+            href="#"
             target="_blank"
             rel="noopener noreferrer"
             className="bg-[#FFD74B] p-2 rounded-full aspect-square max-h-10 lg:max-h-12 lg:h-8/12 flex items-center justify-center"
@@ -54,7 +54,7 @@ const Footer: React.FC = () => {
             </svg>
           </a>
           <a
-            href="https://www.instagram.com"
+            href="#"
             target="_blank"
             rel="noopener noreferrer"
             className="bg-[#FFD74B] p-2 rounded-full aspect-square max-h-10 lg:max-h-12 lg:h-8/12 flex items-center justify-center"
@@ -73,7 +73,7 @@ const Footer: React.FC = () => {
             </svg>
           </a>
           <a
-            href="https://www.instagram.com"
+            href="#"
             target="_blank"
             rel="noopener noreferrer"
             className="bg-[#FFD74B] p-2 rounded-full aspect-square max-h-10 lg:max-h-12 lg:h-8/12 flex items-center justify-center"
@@ -92,7 +92,7 @@ const Footer: React.FC = () => {
             </svg>
           </a>
           <a
-            href="https://www.instagram.com"
+            href="#"
             target="_blank"
             rel="noopener noreferrer"
             className="bg-[#FFD74B] p-2 rounded-full aspect-square max-h-10 lg:max-h-12 lg:h-8/12 flex items-center justify-center"
@@ -129,7 +129,7 @@ const Footer: React.FC = () => {
         </div>
       </div>
 
-      <div className="container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 text-[8px] md:text-[10px] instrument-sans font-light text-gray-300 mt-4 lg:mt-8">
+      <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 text-[8px] md:text-[10px] instrument-sans font-light text-gray-300 mt-4 lg:mt-8">
         <p>
           1. Privacy Notice: In accordance with the Colombian Personal Data
           Protection Law (Law 1581 of 2012), [Store Name] is committed to
